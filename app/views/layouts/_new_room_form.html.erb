@@ -1,0 +1,12 @@
+<%= form_with(model: @room, remote: true, class:"d-flex") do |f| %>
+  <%= f.text_field :name, class: "form-control", autocomplete: "off" %>
+  <%= f.submit data: {disable_with: false}, class:"btn" %>
+<% end %>
+
+<style>
+  .btn {
+    background: #FDE08D;
+    background: -webkit-linear-gradient(top, #8f6B29, #FDE08D, #DF9F28);
+    background: linear-gradient(top, #8f6B29, #FDE08D, #DF9F28);
+  }
+</style>

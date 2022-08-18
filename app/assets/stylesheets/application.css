@@ -13,3 +13,16 @@
  *= require_tree .
  *= require_self
  */
+a:link, a:visited {
+  color: #b68b12;
+}
+
+a:hover {
+  color: #FDE08D !important;
+}
+::selection {
+  color: black;
+  background: rgb(231, 198, 33);
+}
+
+
