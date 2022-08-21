@@ -18,3 +18,17 @@
     <%= yield %>
   </body>
 </html>
+
+    <style>
+      <%= ".msg-#{current_user&.id}" %> {
+        background: #ebbe41;
+        background: -webkit-linear-gradient(top, #a48244, #daaf39, #dd9613);
+        background: linear-gradient(top, #be9549, #a88c46, #ecaf3e);      
+        color: black;
+        padding: 10px;
+      }
+      <%= ".cont-#{current_user&.id}" %> {
+      display: flex;
+        justify-content: flex-end
+      }
+    </style>
